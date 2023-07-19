@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="app.js"></script>
+ 
+ 
+  <title>FUNKIATS</title>
+  <!-- don't forget to link your styles -->
+</head>
+
+
+<body>
+  <section class="first-section" id="first-section">
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <img src="./images/logo.png" alt="FUNKIATS Logo" 
+        style="  width: 3.5%;
+        height: auto;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        border-radius: 10%;" />
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-t ab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+          Home
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-moodbased-tab" data-bs-toggle="pill" data-bs-target="#pills-moodbased"
+          type="button" role="tab" aria-controls="pills-moodbased" aria-selected="false">
+          MOOD-BASED MUSIC
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-artist-tab" data-bs-toggle="pill" data-bs-target="#pills-artist"
+          type="button" role="tab" aria-controls="pills-artist" aria-selected="false">
+          ARTISTS
+        </button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-album-tab" data-bs-toggle="pill" data-bs-target="#pills-album" type="button"
+          role="tab" aria-controls="pills-album" aria-selected="false">
+          ALBUMS
+        </button>
+      </li>
+
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-playlist-tab" data-bs-toggle="pill" data-bs-target="#pills-playlist"
+          type="button" role="tab" aria-controls="pills-playlist" aria-selected="false">
+          PLAYLISTS
+        </button>
+      </li>
+      <!--
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+      </li> 
+      -->
+    </ul>
+
+   <!--
+   <nav class="nav">
+    <div class="container_nav">
+        <div class="logo">
+            <img src="LogoSample_ByTailorBrands-removebg-preview.png">
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#pills-home">Home</a></li>
+                <li><a href="#pills-tabContent">Mood-Based Music</a></li>
+                <li><a href="#pills-tabContent">Artists</a></li>
+                <li><a href="#pills-tabContent">Albums</a></li>
+                <li><a href="#pills-tabContent">Genres</a></li>
+                <li><a href="#pills-tabContent">Playlists</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+    </nav>
+
+        -->
+
+
+
+
+
+      <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">
+        <section class="hero-section" id="hero-section">
+          <img src="music2-removebg-preview.png" />
+          <h1>Music for every Mood.</h1>
+          <span class="material-symbols-outlined">
+            sentiment_satisfied
+            music_note 
+            sentiment_very_satisfied
+            
+          </span>
+       
+            
+           
+          <p>
+            Funkiats is emotion/mood based music recommendation system. Listen
+            to the right music, wherever you are, for every mood and occasion.
+          </p>
+        </section>
+      </div>
+
+      <!--MOOD-BASED TAB-->
+
+      <div class="tab-pane fade" id="pills-moodbased" role="tabpanel" aria-labelledby="pills-moodbased-tab"
+        tabindex="0">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-detectemotion-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-detectemotion" type="button" role="tab" aria-controls="pills-detectemotion"
+              aria-selected="true">
+              DETECT LIVE EMOTION WITH CAMERA
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-emotionlist-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-emotionlist" type="button" role="tab" aria-controls="pills-emotionlist"
+              aria-selected="false">
+            CHOOSE YOUR OWN MOOD
+            </button>
+          </li>
+
+
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-detectemotion" role="tabpanel"
+            aria-labelledby="pills-detectemotion-tab" tabindex="0">
+            <div id="permission-container">
+              <h2>'Enable Camera' for Camera access. </h2>
+              <button onclick="requestCameraPermission()">
+                Enable Camera
+              </button>
+            </div>
+
+            <div id="camera-container" style="display: none">
+              <button onclick="disableCamera()">Disable Camera</button>
+              <video id="camera-stream" autoplay>window.location.href = 'FirstPage.html';</video>
+              
+            </div>
+
+            <script>
+              // Function to request camera permission
+              function requestCameraPermission() {
+                var permissionContainer = document.getElementById(
+                  "permission-container"
+                );
+                var cameraContainer =
+                  document.getElementById("camera-container");
+
+                permissionContainer.style.display = "none";
+                cameraContainer.style.display = "block";
+
+                // Access the camera stream
+                navigator.mediaDevices
+                  .getUserMedia({ video: true })
+                  .then(function (stream) {
+                    var videoElement =
+                      document.getElementById("camera-stream");
+                    videoElement.srcObject = stream;
+                  })
+                  .catch(function (error) {
+                    console.log("Error accessing camera:", error);
+                  });
+              }
+              function disableCamera() {
+                var permissionContainer = document.getElementById(
+                  "permission-container"
+                );
+                var cameraContainer =
+                  document.getElementById("camera-container");
+
+                permissionContainer.style.display = "block";
+                cameraContainer.style.display = "none";
+
+                // Stop the camera stream
+                if (stream && stream.getTracks) {
+                  stream.getTracks().forEach(function (track) {
+                    track.stop();
+                  });
+                }
+              }
+            </script>
+          </div>
+          <div class="tab-pane fade" id="pills-emotionlist" role="tabpanel" aria-labelledby="pills-emotionlist-tab"
+            tabindex="0">
+            <ul class="emotions-list">
+              <div class="moodcolumn">
+              <li>
+                <button onclick="handleEmotionClick('Happy/Joyful')">
+                  Happy/Joyful
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Sad/Melancholic')">
+                  Sad/Melancholic
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Energetic/Uplifting')">
+                  Energetic/Uplifting
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Relaxing/Calming')">
+                  Relaxing/Calming
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Excited/Upbeat')">
+                  Excited/Upbeat
+                </button>
+              </li>
+              </div>
+              <div class="moodcolumn">
+              <li>
+                <button onclick="handleEmotionClick('Angry/Aggressive')">
+                  Angry/Aggressive
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Reflective/Thoughtful')">
+                  Reflective/Thoughtful
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Romantic/Love')">
+                  Romantic/Love
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Inspiring/Motivational')">
+                  Inspiring/Motivational
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Nostalgic/Sentimental')">
+                  Nostalgic/Sentimental
+                </button>
+              </li>
+            </div>
+            <div class="moodcolumn">
+              <li>
+                <button onclick="handleEmotionClick('Peaceful/Serenity')">
+                  Peaceful/Serenity
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Mysterious/Enigmatic')">
+                  Mysterious/Enigmatic
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Dramatic/Intense')">
+                  Dramatic/Intense
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Hopeful/Optimistic')">
+                  Hopeful/Optimistic
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Dreamy/Ethereal')">
+                  Dreamy/Ethereal
+                </button>
+              </li>
+            </div>
+              <div class="moodcolumn">
+              <li>
+                <button onclick="handleEmotionClick('Playful/Cheerful')">
+                  Playful/Cheerful
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Sentimental/Touching')">
+                  Sentimental/Touching
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Dark/Gloomy')">
+                  Dark/Gloomy
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Empowering/Confident')">
+                  Empowering/Confident
+                </button>
+              </li>
+              <li>
+                <button onclick="handleEmotionClick('Mystical/Spiritual')">
+                  Mystical/Spiritual
+                </button>
+              </li>
+            
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+        
+      <div class="tab-pane fade" id="pills-artist" role="tabpanel" aria-labelledby="pills-artist-tab" tabindex="0">
+          <!--image card layout start-->
+          <div class="container1">
+            <!--image row1 start-->
+            <div class="row1">
+              <!--image card start-->
+              <div class="image">
+                <img src="JOHNMAYER.jpeg" alt="" />
+                <div class="details">
+                  <h2>john <span> mayer</span></h2>
+                  <p>
+
+                    John Mayer: Renowned singer-songwriter and guitarist.
+                    Soulful vocals, captivating performances. Blues and
+                    contemporary fusion. Global acclaim. Musical icon.
+                  </p>
+                  <div class="more">
+                    <a href="#" class="read-more">Read <span>More</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-eye"></i></a>
+                      <a href="#"><i class="fas fa-paperclip"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+
+              <!--image card start-->
+              <div class="image">
+                <img src="arijitsingh.jpeg" alt="" />
+                <div class="details">
+                  <h2>Arijit <span>Singh</span></h2>
+                  <p>
+
+                    Arijit Singh, the renowned Indian playback singer, has touched the hearts of millions with his
+                    soulful voice and emotive renditions, earning him a special place in the world of music.
+                  </p>
+                  <div class="more">
+                    <a href="#" class="read-more">Read <span>More</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-eye"></i></a>
+                      <a href="#"><i class="fas fa-paperclip"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="Eminem.jpg" alt="" />
+                <div class="details">
+                  <h2><span>Eminem</span></h2>
+                  <p>
+                    Eminem, also known as Marshall Mathers, is a highly acclaimed rapper and songwriter
+                    renowned for his powerful lyrics, raw storytelling, and influential impact on the world of hip-hop.
+                  </p>
+                  <div class="more">
+                    <a href="#" class="read-more">Read <span>More</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-eye"></i></a>
+                      <a href="#"><i class="fas fa-paperclip"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="drake.jpeg" alt="" />
+                <div class="details">
+                  <h2><span>drake</span></h2>
+                  <p>
+
+                    Drake, the Canadian rapper and singer, has taken the music
+                    industry by storm with his unique blend of introspective lyrics and infectious beats.
+                  </p>
+                  <div class="more">
+                    <a href="#" class="read-more">Read <span>More</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-eye"></i></a>
+                      <a href="#"><i class="fas fa-paperclip"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--image row1 end-->
+            <!--image row1 start-->
+            <div class="row1">
+              <!--image card start-->
+              <div class="image">
+                <img src="edsheeran.jpeg" alt="" />
+                <div class="details">
+                  <h2>ed <span>sheeran</span></h2>
+                  <p>
+
+                    Ed Sheeran, the acclaimed British singer-songwriter, has captivated audiences worldwide with his
+                    heartfelt lyrics and infectious melodies.
+                  </p>
+                  <div class="more">
+                    <a href="#" class="read-more">Read <span>More</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-eye"></i></a>
+                      <a href="#"><i class="fas fa-paperclip"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+
+
+              <!--image card start-->
+              <div class="image">
+                <img src="annemarie.jpeg" alt="" />
+                <div class="details">
+                  <h2>Anne <span>Marie</span></h2>
+                  <p>
+                    Anne-Marie, the talented British singer-songwriter, has captivated audiences with her
+                    powerful vocals and heartfelt lyrics, establishing herself as a rising star in the music industry.
+                  </p>
+                  <div class="more">
+                    <a href="#" class="read-more">Read <span>More</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-eye"></i></a>
+                      <a href="#"><i class="fas fa-paperclip"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="sushant.jpeg" alt="" />
+                <div class="details">
+                  <h2>Sushant<span> KC</span></h2>
+                  <p>
+                    Sushant KC, the acclaimed Nepali singer, has gained widespread recognition for his melodious voice
+                    and heartfelt musical compositions, making him a prominent figure in the Nepali music industry.
+                  </p>
+                  <div class="more">
+                    <a href="#" class="read-more">Read <span>More</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-eye"></i></a>
+                      <a href="#"><i class="fas fa-paperclip"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end--> <!--image card start-->
+              <div class="image">
+                <img src="the-weeknd.jpg" alt="" />
+                <div class="details">
+                  <h2>The <span>Weeknd</span></h2>
+                  <p>
+
+                    The Weeknd, a Canadian singer-songwriter,
+                    has mesmerized global audiences with his haunting vocals and boundary-pushing music.
+                  </p>
+                  <div class="more">
+                    <a href="#" class="read-more">Read <span>More</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-eye"></i></a>
+                      <a href="#"><i class="fas fa-paperclip"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+
+            </div>
+            <!--image row1 end-->
+          </div>
+        </div>
+
+
+        <!--  <h1>List of Artists</h1>
+        <ul>
+        <li>
+        <div class="card" >
+          <img src="./images/the-weeknd.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">The Weeknd</p>
+          </div>
+        </div></li>
+<li>
+        <div class="card" >
+          <img src="./images/drake.jpeg" class="card-img-top" alt="Drake...">
+          <div class="card-body">
+            <p class="card-text">Drake</p>
+          </div>
+        </div></li>
+<li>
+        <div class="card" >
+          <img src="./images/arijitsingh.jpeg" class="card-img-top" alt="Arijit Singh...">
+          <div class="card-body">
+            <p class="card-text">Arijit Singh</p>
+          </div>
+        </div></li>
+<li>
+        <div class="card" >
+          <img src="./images/annemarie.jpeg" class="card-img-top" alt="Anne Marie...">
+          <div class="card-body">
+            <p class="card-text">Anne Marie</p>
+          </div>
+        </div></li>
+        <li>
+        <div class="card" >
+          <img src="./images/edsheeran.jpeg" class="card-img-top" alt="Ed Sheeran">
+          <div class="card-body">
+            <p class="card-text">Ed Sheeran</p>
+          </div>
+        </div></li>
+      </ul>
+
+        <h1 style="text-align: start;">List of Artists</h1>
+        <div class="artist-card">
+          <img class="artist-image" src="./images/the-weeknd.jpg" alt="The Weeknd">
+          <p class="artist-name">The Weeknd</p>
+        </div>
+        <div class="artist-card">
+          <img class="artist-image" src="./images/annemarie.jpeg" alt="Anne Marie">
+          <p class="artist-name">Anne Marie</p>
+        </div>
+        <div class="artist-card">
+          <img class="artist-image" src="./images/arijitsingh.jpeg" alt="">
+          <p class="artist-name">Arijit Singh</p>
+        </div>
+        <div class="artist-card">
+          <img class="artist-image" src="./images/drake.jpeg" alt="">
+          <p class="artist-name">Drake</p>
+        </div>
+      
+        </div>
+        
+
+
+
+      <div
+      class="tab-pane fade"
+      id="pills-disabled"
+      role="tabpanel"
+      aria-labelledby="pills-disabled-tab"
+      tabindex="0"
+    >
+    ALBUMS LISTS.....
+    </div>
+  -->
+        <div class="tab-pane fade" id="pills-album" role="tabpanel" aria-labelledby="pills-album-tab" tabindex="0">
+        <a> ALBUMS LISTS will be generated using Spotify For Developers' API.....</a> 
+        </div>
+
+        <div class="tab-pane fade" id="pills-genre" role="tabpanel" aria-labelledby="pills-genre-tab" tabindex="0">
+         <a>GENRES LISTSS will be generated using Spotify For Developers' API..........</a> 
+        </div>
+
+        <div class="tab-pane fade" id="pills-playlist" role="tabpanel" aria-labelledby="pills-playlist-tab"
+          tabindex="0">
+          <a> PLAYLISTS LISTSS will be generated using Spotify For Developers' API..........</a>
+
+          <h1>Playlists as per the different moods can be used from spotify </h1>
+          <img src="./images/F_.jpg" alt="">
+          <ul id="playlist-list"></ul>
+          <script src="app.js"></script>
+        </div>
+  
+  </section>
+
+
+  <!--MUSIC PLAYER-->
+  <div id="info">
+    <div class="main">
+
+
+      <!-- control part -->
+      <div class="song_title">
+        <p>song title</p>
+        <p>artist name</p>
+      </div>
+      <div class="control_part">
+        <div class="control_buttons">
+          <div class="range_slider">
+            <input type="range" min="0" max="100" id="slider" value="0" />
+            <p>3:00</p>
+          </div>
+          <div class="main_btns">
+            <button id="previous">
+              <i class="bx bx-skip-previous"></i>
+            </button>
+            <button id="play_btn"><i class="bx bx-play"></i></button>
+            <audio id="audioPlayer" src="music-funkiats.mp3"></audio>
+            <button id="previous"><i class="bx bx-skip-next"></i></button>
+          </div>
+          <div class="top_bar">
+            <button onclick="sidebar()">
+              <i class="bx bx-chevron-right"></i>
+            </button>
+            <div class="options">
+              <button><i class="bx bx-music"></i></button>
+              <button><i class="bx bxs-volume-low"></i></button>
+              <button><i class="bx bx-edit-alt"></i></button>
+            </div>
+            <button onclick="open_p()">
+              <i class="bx bx-menu-alt-left"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- playlist songs -->
+      <div class="playlist">
+        <div class="p_song">
+          <p id="p_title">song name</p>
+          <p id="p_artist">artist name</p>
+          <button><i class="bx bx-play"></i></button>
+        </div>
+        <div class="p_song active_song">
+          <p id="p_title">song name</p>
+          <p id="p_artist">artist name</p>
+          <button><i class="bx bx-play"></i></button>
+        </div>
+        <div class="p_song">
+          <p id="p_title">song name</p>
+          <p id="p_artist">artist name</p>
+          <button><i class="bx bx-play"></i></button>
+        </div>
+        <div class="p_song">
+          <p id="p_title">song name</p>
+          <p id="p_artist">artist name</p>
+          <button><i class="bx bx-play"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="whats-on-spotify" id="whats-on-spotify">
+      <h2 class="section-title">What’s on FUNKIATS?</h2>
+
+      <div class="row">
+        <div class="column">
+          <img src="./images/music-icon.png" alt="volume symbol" />
+          <h3>Millions of Songs</h3>
+          <p>There are millions of songs on Spotify</p>
+        </div>
+
+        <div class="column">
+          <img src="./images/high-quality-icon.png" alt="sound waves symbol" />
+          <h3>HD Music</h3>
+          <p>Listen to music as if you were listening live</p>
+        </div>
+
+        <div class="column">
+          <img src="./images/devices-icon.png" alt="devices symbol" />
+          <h3>Stream Everywhere</h3>
+          <p>Stream music on your smartphone, tablet or computer</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="spotify-features" id="spotify-features">
+      <div>
+        <h2 class="section-title section-title--white">
+          It’s as yeezy as Kanye West.
+        </h2>
+        <div class="feature-blocks">
+          <h3>Search</h3>
+          <p>Know what you want to listen to? Just search and hit play.</p>
+        </div>
+
+        <div class="feature-blocks">
+          <h3>Browse</h3>
+          <p>
+            Check out the latest charts, brand new releases and great
+            playlists for right now.
+          </p>
+        </div>
+
+        <div class="feature-blocks">
+          <h3>Discover</h3>
+          <p>
+            Enjoy new music every Monday with your own personal playlist. Or
+            sit back and enjoy Radio.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img class="spotify-white-icon" src="./images/F__5.png" alt="white Spotify logo" />
+      </div>
+
+      <div>
+        <img class="spotify-app" src="./images/spotify-app.jpg" alt="spotify app running in mobile phone" />
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html># FUNKIATS-EMOTION-BASED-MUSIC-SYSTEM
