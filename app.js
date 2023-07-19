@@ -1,4 +1,3 @@
-
 var play_btn = document.getElementById('play_btn');
 var audioPlayer = document.getElementById('audioPlayer');
 var isPlaying = false;
