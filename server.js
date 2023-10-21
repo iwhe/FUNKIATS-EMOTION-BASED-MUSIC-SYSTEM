@@ -6,8 +6,8 @@ const axios = require("axios");
 const app = express();
 
 // Set your client ID, client secret, and redirect URI
-const clientId = "644131def52b44a8b19fdd717524613f";
-const clientSecret = "f91cb876966f4afe9e33170a0b66c137";
+const clientId = "#YOUR-CLIENT-ID";
+const clientSecret = "#YOUR-CLIENT-SECRET";
 const redirectUri = "http://127.0.0.1:5501/callback";
 
 const bodyParser = require("body-parser");
